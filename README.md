@@ -1,9 +1,13 @@
-## sbt project compiled with Dotty
+## Dotty-Loom
+
+  Proof of concept implementation of async/await over JDK Loom Continuations. 
+   (see  https://openjdk.java.net/projects/loom/ for details)
 
 ### Usage
 
-This is a normal sbt project, you can compile code with `sbt compile` and run it
-with `sbt run`, `sbt console` will start a Dotty REPL.
+  For running this you should
+    - switch to Loom JDK when
+    - switch to Standard (Oracle/OpenVM)  JDK when compiling, because Loom JDK is crashed
 
-For more information on the sbt-dotty plugin, see the
-[dotty-example-project](https://github.com/lampepfl/dotty-example-project/blob/master/README.md).
+ Note, that both Loom and Dotty are evolving, so this was work in some point of time in the past.
+ No guarantees about current state.
